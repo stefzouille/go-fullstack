@@ -1,3 +1,5 @@
+import 'dotenv/config';
+
 const express = require('express');
 
 const app = express();
@@ -11,6 +13,8 @@ const path = require('path');
 const stuffRoutes = require('./routes/stuff');
 
 const userRoutes = require('./routes/user');
+
+
 
 
 
