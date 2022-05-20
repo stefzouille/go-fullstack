@@ -22,7 +22,7 @@ const userRoutes = require('./routes/user');
 
 
 
-mongoose.connect('mongodb+srv://lolo:PRIVATE_KEY@cluster0.e9dod.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://lolo:S3_BUCKET@cluster0.e9dod.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
