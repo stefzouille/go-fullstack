@@ -23,7 +23,7 @@ const userRoutes = require('./routes/user');
 
 
 // var cleApi = process.env.SECRET_KEY
-mongoose.connect('mongodb+srv://lolo:process.env.SECRET_KEY@cluster0.e9dod.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://lolo:process.SECRET_KEY@cluster0.e9dod.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
