@@ -1,8 +1,6 @@
 
 require('dotenv').config()
-console.log(process.env)
-// console.log(process.env.SECRET_KEY)
-
+// console.log(process.env)
 
 const express = require('express');
 
@@ -19,11 +17,16 @@ const stuffRoutes = require('./routes/stuff');
 const userRoutes = require('./routes/user');
 
 
+let mdpApi = process.env.PROJECT_API_KEY;
+console.log(mdpApi);
+let nameApi = process.env.NAME;
 
+// mongodb + srv://<username>:<password>@cluster0.e9dod.mongodb.net/?retryWrites=true&w=majority
 
+var dataBase = `mongodb+srv://${nameApi}${mdpApi}@cluster0.e9dod.mongodb.net/?retryWrites=true&w=majority`
 
-// var cleApi = process.env.SECRET_KEY
-mongoose.connect('mongodb+srv://lolo:process.SECRET_KEY@cluster0.e9dod.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+mongoose.connect(dataBase,
+  console.log(dataBase),
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
