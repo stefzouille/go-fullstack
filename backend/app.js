@@ -1,7 +1,7 @@
 
 require('dotenv').config()
 console.log(process.env)
-// console.log(process.env.S3_BUCKET)
+// console.log(process.env.SECRET_KEY)
 
 
 const express = require('express');
@@ -22,7 +22,8 @@ const userRoutes = require('./routes/user');
 
 
 
-mongoose.connect('mongodb+srv://lolo:S3_BUCKET@cluster0.e9dod.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+// var cleApi = process.env.SECRET_KEY
+mongoose.connect('mongodb+srv://lolo:process.env.SECRET_KEY@cluster0.e9dod.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
