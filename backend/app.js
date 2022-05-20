@@ -1,7 +1,7 @@
 
 require('dotenv').config()
 console.log(process.env)
-console.log(process.env.S3_BUCKET)
+// console.log(process.env.S3_BUCKET)
 
 
 const express = require('express');
