@@ -20,11 +20,9 @@ const userRoutes = require('./routes/user');
 const mdpApi = process.env.PROJECT_API_KEY;
 
 const nameApi = process.env.NAME_API;
-console.log(nameApi);
 
-// mongodb + srv://<username>:<password>@cluster0.e9dod.mongodb.net/?retryWrites=true&w=majority
 
-var dataBase = `mongodb+srv://${nameApi}:${mdpApi}@cluster0.e9dod.mongodb.net/?retryWrites=true&w=majority`
+const dataBase = `mongodb+srv://${nameApi}:${mdpApi}@cluster0.e9dod.mongodb.net/?retryWrites=true&w=majority`
 
 mongoose.connect(dataBase,
 
